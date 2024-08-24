@@ -1,0 +1,21 @@
+#ALGORITMO 
+#iniciamos dandole valor a las variables y como es un ciclo que 
+#se repite usamos un cliclo for para poder  
+for i in range(1, 4):
+    print(f"\nAlumno {i}")
+    
+    nombre= input("Introduce el nombre del alumno: ")
+    
+    calificacion1 = float(input("Ingrese la primera calificación: "))
+    calificacion2 = float(input("Ingrese segunda calificación: "))
+    calificacion3 = float(input("Ignrese la tercera calificación: "))
+    
+
+    promedio = (calificacion1 + calificacion2 + calificacion3) / 3
+    
+    if promedio >= 70:
+        estado = "aprobado"
+    else:
+        estado = "reprobado"
+    
+    print(f"{nombre} promedio{promedio:.2f}{estado}.")
